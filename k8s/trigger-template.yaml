@@ -15,7 +15,7 @@ spec:
         generateName: flask-mysql-pipeline-run-
       spec:
         pipelineRef:
-          name: nodejs-pipeline
+          name: flask-mysql-app-pipeline
         serviceAccountName: vcs-trigger
         params:
           - name: app-name

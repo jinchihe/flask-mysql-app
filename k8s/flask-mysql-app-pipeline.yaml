@@ -36,11 +36,14 @@ spec:
       runAfter:
         - clone-repository
       taskRef:
-        name: npm
+        name: pylint
       params:
+        - name: PYTHON
+          value: "3.7"
+        - name: SOURCE_PATH
+          value: "app"
         - name: ARGS
-          value:
-            - install-ci-test
+          value: "-r y --exit-zero"
       workspaces:
         - name: source
           workspace: pipeline-shared-data
