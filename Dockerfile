@@ -10,8 +10,8 @@ RUN apt-get -y install \
 
 WORKDIR /app
 
-COPY requirements.txt /app/requirements.txt
-RUN pip install -r requirements.txt --src /usr/local/src
+COPY app/requirements.txt /app/requirements.txt
+RUN pip install -r app/requirements.txt --src /usr/local/src
 
 COPY . .
 
