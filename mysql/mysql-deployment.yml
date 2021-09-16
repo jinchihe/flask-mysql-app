@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: mysql
-        imagePullPolicy: Never
+        image: mysql:latest
+        imagePullPolicy: IfNotPresent
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:

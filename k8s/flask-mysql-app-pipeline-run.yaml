@@ -5,7 +5,7 @@ metadata:
 spec:
   pipelineRef:
     name: nodejs-pipeline
-  serviceAccountName: build-bot
+  serviceAccountName: vcs-trigger
   params:
     - name: app-name
       value: flask-mysql-app

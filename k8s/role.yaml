@@ -1,0 +1,57 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: vcs-trigger
+rules:
+  - apiGroups:
+      - triggers.tekton.dev
+    resources:
+      - eventlisteners
+      - triggerbindings
+      - triggertemplates
+    verbs:
+      - get
+  - apiGroups:
+      - tekton.dev
+    resources:
+      - pipelineruns
+      - pipelineresources
+      - taskruns
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+  - apiGroups:
+      - ""
+    resources:
+      - configmaps
+    verbs:
+      - list
+  - apiGroups:
+      - ""
+    resources:
+      - jobs
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
