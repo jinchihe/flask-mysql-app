@@ -23,7 +23,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: flaskapi-secrets
+              name: fask-mysql-api-secret
               key: db_root_password
         ports:
         - containerPort: 3306
@@ -34,7 +34,7 @@ spec:
       volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
-            claimName: mysql-pv-claim
+            claimName: jinchi-mysql-pvc
 
 
 ---
