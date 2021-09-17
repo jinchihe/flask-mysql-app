@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 894a3de740afeccd91a07e3c3abf6f03a97189d8
+    app.openshift.io/vcs-ref: e0d1c681206242d1a29e5d179f1cebf3ee54c789
     app.openshift.io/vcs-uri: https://github.com/jinchihe/flask-mysql-app
   labels:
     app: jinchihe-assignment
@@ -26,7 +26,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 894a3de740afeccd91a07e3c3abf6f03a97189d8
+    app.openshift.io/vcs-ref: e0d1c681206242d1a29e5d179f1cebf3ee54c789
     app.openshift.io/vcs-uri: https://github.com/jinchihe/flask-mysql-app
   labels:
     app: jinchihe-assignment
@@ -45,7 +45,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 894a3de740afeccd91a07e3c3abf6f03a97189d8
+        app.openshift.io/vcs-ref: e0d1c681206242d1a29e5d179f1cebf3ee54c789
         app.openshift.io/vcs-uri: https://github.com/jinchihe/flask-mysql-app
       labels:
         app: jinchihe-assignment
@@ -62,7 +62,7 @@ spec:
               name: flaskapi-secrets
         - name: db_name
           value: flaskapi
-        image: quay.io/hejinchi_ibm/flask-mysql-app:894a3de740afeccd91a07e3c3abf6f03a97189d8
+        image: quay.io/hejinchi_ibm/flask-mysql-app:e0d1c681206242d1a29e5d179f1cebf3ee54c789
         imagePullPolicy: IfNotPresent
         name: flaskapi
         ports:
@@ -72,7 +72,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 894a3de740afeccd91a07e3c3abf6f03a97189d8
+    app.openshift.io/vcs-ref: e0d1c681206242d1a29e5d179f1cebf3ee54c789
     app.openshift.io/vcs-uri: https://github.com/jinchihe/flask-mysql-app
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
