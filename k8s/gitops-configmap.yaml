@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: gitops-repo
 data:
-  branch: main
+  branch: master
   host: github.com
   protocol: https
   repo: flask-mysql-app
