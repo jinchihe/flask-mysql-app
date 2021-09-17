@@ -56,7 +56,7 @@ rules:
       - patch
       - delete
   - apiGroups:
-      - ""
+      - route.openshift.io
     resources:
       - routes
     verbs:
@@ -80,7 +80,8 @@ rules:
       - patch
       - delete
   - apiGroups:
-      - ""
+      - extensions
+      - apps
     resources:
       - deployments
     verbs:
