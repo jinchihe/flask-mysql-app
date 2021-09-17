@@ -25,7 +25,7 @@ spec:
           - name: sha                        # introduce new param
             value: $(tt.params.sha)          # use value from trigger event
           - name: image-repo
-            value: qquay.io/hejinchi_ibm/flask-mysql-app
+            value: quay.io/hejinchi_ibm/flask-mysql-app
         workspaces:
           - name: pipeline-shared-data
             volumeClaimTemplate:
