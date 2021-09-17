@@ -16,4 +16,4 @@ RUN pip install -r /app/requirements.txt --src /usr/local/src
 COPY . .
 
 EXPOSE 5000
-CMD [ "python", "flaskapi.py" ]
+CMD [ "python", "/app/flaskapi.py" ]
