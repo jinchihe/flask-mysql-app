@@ -11,6 +11,7 @@ RUN apt-get -y install \
 WORKDIR /app
 
 COPY app/requirements.txt /app/requirements.txt
+COPY app/flaskapi.py /app/flaskapi.py
 RUN pip install -r /app/requirements.txt --src /usr/local/src
 
 COPY . .
