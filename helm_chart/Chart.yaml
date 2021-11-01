@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1
 version: 0.1.0
 name: jinchi-chart-app
 description: Chart to configure ArgoCD with the jinchi-chart-app project and its applications
