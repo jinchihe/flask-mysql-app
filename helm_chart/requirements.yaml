@@ -1,4 +1,4 @@
 dependencies:
-  - name: jinchi-chart-app
+  - name: Wordress
     version: 0.0.1
     repository: https://jinchihe.github.io/helm_chart/charts
