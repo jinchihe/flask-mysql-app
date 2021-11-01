@@ -1,3 +1,3 @@
 global: {}
-jinchi-chart:
+jinchi-chart-app:
   replicaCount: 1
